@@ -1,4 +1,3 @@
-import React from "react";
 import "./cardAnimate.css";
 import WilsonTravel from "../../assets/images/Wilson-Travel.jpg";
 

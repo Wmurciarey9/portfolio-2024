@@ -1,4 +1,3 @@
-import React from "react";
 import "./aboutMe.css";
 
 import { CardAnimate } from "../CardAnimate/CardAnimate";
@@ -19,20 +18,22 @@ export const AboutMe = () => {
       </div>
       <div className="wm-about-right">
         <p>
-          Hello, I'm a dedicated <span> software developer </span> who is
-          passionate about creating innovative solutions. With a relentless
-          drive for <span>self-improvement</span> , I am always seeking new
-          knowledge and continuously honing my skills in the ever-evolving world
-          of technology. <span> I thrive on challenges </span> and embrace hard
-          work as an opportunity to push the boundaries of what's possible.
-        </p>
-        <p>
-          <span> As a self-learner</span>, I am committed to staying ahead of
-          the curve and leveraging cutting-edge tools and techniques to deliver
-          high-quality software solutions that exceed expectations. With a
-          strong work ethic and a genuine <span> love for coding</span>, I am
-          ready to tackle any project and contribute to the success of your team
-          or organization.
+          Hey there, I'm a passionate <span>software developer </span>with over
+          three years in the game, specializing in the exciting world of web
+          development and project management. I thrive on
+          <span>finding innovative solutions </span>that push the boundaries of
+          what tech can do. Whether it's programming slick
+          <span> websites / webapps </span>or tackling client issues with speed
+          and precision, I'm all about delivering top-notch results.
+          <br />
+          <br />
+          I'm not just a coder; <span>I'm a problem-solver</span> who's always
+          upping my game with the latest tools and techniques.
+          <span> I'm not afraid of hard work</span>, and I genuinely love
+          getting my hands dirty with code. Ready to dive into any project,
+          <span> bring fresh ideas to the table</span>, and be the tech-savvy
+          asset your team needs for success. Let's build something awesome
+          together!
         </p>
       </div>
     </div>

@@ -1,0 +1,309 @@
+.project {
+  display: flex;
+  align-items: center;
+  height: auto;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 8px 20px 0 rgba(11, 96, 176, 0.251);
+  gap: 40px;
+  width: 43%;
+
+  &:hover {
+    background-color: #f0edcfa2;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0);
+  }
+
+  .left {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+    text-align: center;
+
+    h2 {
+      margin: 10px 0;
+      top: 0;
+    }
+    .skillsUsed {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 2fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 0px;
+
+      @include mobile {
+        height: 100px;
+        margin-top: 230px;
+      }
+      @include tablet {
+        height: 100px;
+        margin-top: 300px;
+      }
+
+      span {
+        font-size: 15px;
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient(
+            to bottom,
+            rgb(93, 38, 183),
+            rgba(0, 0, 0, 0)
+          )
+          1 100%;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px 15px;
+      }
+    }
+
+    p {
+      height: 30%;
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+
+      @include mobile {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      @include tablet {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+
+        text-align: center;
+      }
+      @include laptop {
+        margin-top: 10px;
+
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .whiteBtn {
+        background-color: white;
+        background-image: none;
+        border: 1px solid black;
+        a {
+          color: black;
+        }
+      }
+
+      button {
+        /* padding: 10px 20px; */
+        background-image: linear-gradient(rgb(56, 56, 131), #0055ff);
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.37);
+        transition: 0.25s ease;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+        &:hover {
+          scale: 1.1;
+        }
+
+        @include mobile {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        @include tablet {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        @include laptop {
+          display: flex;
+          padding: 10px 10px;
+          margin: 20px 2px 0 0;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .right {
+    width: 55%;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    margin: 0 auto;
+    .image {
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      width: 100%;
+      height: auto;
+      position: absolute;
+      bottom: px;
+      z-index: 0;
+      margin: 0;
+      padding: 0;
+      -webkit-transition: top 11s;
+      -moz-transition: top 11s;
+      -ms-transition: top 11s;
+      -o-transition: top 11s;
+      transition: bottom 11s;
+    }
+    .car-rental-project {
+      bottom: -190px;
+    }
+    .ecom-project {
+      bottom: -305px;
+    }
+    .connectify-project {
+      bottom: -195px;
+    }
+    .netflix-project {
+      bottom: 50px;
+    }
+    &:hover img {
+      bottom: 0;
+      -webkit-transition: all 11s;
+      -moz-transition: all 11s;
+      -ms-transition: all 11s;
+      -o-transition: all 11s;
+      transition: all 11s;
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    padding: 10px;
+    .left {
+      width: 100%;
+      .skillsUsed {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 14px;
+          padding: 5px 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      width: 90%;
+      align-items: center;
+      position: absolute;
+
+      .image {
+        position: relative;
+        top: 60px;
+        overflow: hidden;
+        width: 95%;
+        margin-top: 30px;
+        height: 200px;
+      }
+    }
+  }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+    .left {
+      width: 100%;
+      .skillsUsed {
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 14px;
+          padding: 5px 10px;
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      justify-content: center;
+      width: 86%;
+
+      .image {
+        position: relative;
+        margin-top: 60px;
+        overflow: hidden;
+        width: 600px;
+        height: 280px;
+      }
+    }
+  }
+  @include laptop {
+    height: auto;
+    margin-bottom: 70px;
+    .left {
+      margin-right: 10px;
+      .skillsUsed {
+        height: auto;
+        display: grid;
+        grid-template-columns: 120px 120px;
+        grid-template-rows: 50px 50px;
+        grid-column-gap: 30px;
+        grid-row-gap: 2px;
+        margin-bottom: 10px;
+
+        span {
+          text-align: center;
+        }
+      }
+    }
+
+    .right {
+      .image {
+      }
+    }
+  }
+}

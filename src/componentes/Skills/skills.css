@@ -1,0 +1,38 @@
+.wm-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px 80px;
+}
+.containerSkills {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0px;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.skill-item {
+  width: 100%;
+  display: flex;
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  .icon {
+    font-size: 4.3rem !important;
+    padding: 10px;
+  }
+}
+
+.color-hover:hover {
+  color: #40a2d8;
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.wm-main-projects {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 80px;
+  margin-top: 80px;
+  padding-bottom: 140px;
+
+  .iconSmall {
+    font-size: 30px;
+  }
+
+  @include mobile {
+    margin: 0 7%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  @include tablet {
+    margin: 0 7%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+  @include laptop {
+    margin: 0 7%;
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+}
