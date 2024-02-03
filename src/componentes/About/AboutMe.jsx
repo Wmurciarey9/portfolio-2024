@@ -4,7 +4,7 @@ import { CardAnimate } from "../CardAnimate/CardAnimate";
 
 export const AboutMe = () => {
   return (
-    <div className="wm-about">
+    <div className="wm-about" id="about">
       {/* Background */}
       <div className="ripple-background">
         <div className="circle xxlarge shade1"></div>

@@ -7,7 +7,7 @@ import "./projects.css";
 
 export const Projects = () => {
   return (
-    <div className="wm-main-projects">
+    <div className="wm-main-projects" id="projects">
       <div className="section-title">
         <span>PROJECTS</span>
       </div>

@@ -4,7 +4,7 @@ import wilson from "../../assets/images/Wilson.png";
 
 export const Hero = () => {
   return (
-    <div className="wm-hero">
+    <div className="wm-hero" id="hero">
       <div className="wm-hero-left">
         <p>Hello, I'm</p>
         <h1>
@@ -12,7 +12,9 @@ export const Hero = () => {
         </h1>
         <p>A software developer</p>
         <div className="buttons">
-          <button>HIRE ME</button>
+          <button>
+            <a href="#contact">HIRE ME</a>
+          </button>
         </div>
       </div>
       <div className="wm-hero-right">

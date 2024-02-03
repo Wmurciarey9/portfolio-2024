@@ -5,7 +5,7 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 
 export const Skills = () => {
   return (
-    <div className="wm-skills">
+    <div className="wm-skills" id="skills">
       <div className="containerSkills">
         <div className="skill-item">
           <Tippy content="HTML">

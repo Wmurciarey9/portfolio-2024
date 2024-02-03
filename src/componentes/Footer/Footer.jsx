@@ -10,7 +10,9 @@ export const Footer = () => {
   return (
     <div className="wm-footer">
       <div className="wm-footer-logo">
-        <img src={LogoTransparent} alt="" />
+        <a href="#hero">
+          <img src={LogoTransparent} alt="" />
+        </a>
       </div>
       <div className="wm-footer-icons">
         <div className="iconItem">

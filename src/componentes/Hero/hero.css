@@ -26,7 +26,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 35px;
+}
 .buttons {
   button {
     background-image: linear-gradient(#383883, #05f);
@@ -36,7 +40,7 @@
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
-    padding: 10px 25px;
+    padding: 10px 0px;
     margin-top: 20px;
     transition: 0.25s ease;
     font-family: "Clash Display", sans-serif;

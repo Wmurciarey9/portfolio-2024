@@ -4,20 +4,31 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InsertDriveFileIcon from "@mui/icons-material/InsertDriveFile";
 import Logo from "../../assets/images/Logo-nav.png";
 import WilsonCV from "../../assets/Wilson-CV-2024.pdf";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  window.onscroll = () => {
+    setIsScrolled(window.pageYOffset === 0 ? false : true);
+    return () => (window.onscroll = null);
+  };
+
   return (
-    <div className="wm-navbar-main">
+    <div className={isScrolled ? "wm-navbar-main scrolled" : "wm-navbar-main"}>
       <div className="wm-navbar-left">
-        <img className="wm-navbar-logo" src={Logo} alt="logo" />
+        <Link to={`/`}>
+          <img className="wm-navbar-logo" src={Logo} alt="logo" />
+        </Link>
       </div>
       <div className="wm-navbar-right">
         <div className="wm-navbar-right-menu">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Skills</a>
-          <a href="">Projects</a>
-          <a href="">Contact</a>
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
         <div className="wm-navbar-right-icons">
           <div className="iconItem">

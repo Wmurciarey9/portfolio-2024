@@ -4,11 +4,30 @@
   flex-direction: row;
   height: 100px;
   justify-content: space-around;
-  margin: 0px 80px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  &.scrolled {
+    background-color: #222;
+    transition: 0.8s;
+    a {
+      color: white;
+      &:hover {
+        color: #40a2d8;
+      }
+    }
+
+    .wm-navbar-logo {
+      content: url("../../assets/images/Logo-White-Transparent.png");
+    }
+  }
 }
 
 .wm-navbar-left {
   width: 20%;
+  margin-left: 80px;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -23,11 +42,12 @@
 .wm-navbar-right {
   display: flex;
   width: 80%;
-  justify-content: space-around;
+  margin-right: 80px;
+  /* justify-content: space-around; */
 }
 
 .wm-navbar-right-menu {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: center;
   text-align: center;

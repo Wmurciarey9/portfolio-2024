@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id="contact">
       <div className="c">
         <div className="c-bg"></div>
         <div className="c-wrapper">
@@ -48,12 +48,16 @@ const Contact = () => {
             </p>
             <div className="c-info">
               <div className="c-info-item">
-                <LocalPhoneIcon className="c-icon color-hover " /> +57 316 868
-                9229
+                <a href="https://wa.link/jipbe4">
+                  <LocalPhoneIcon className="c-icon color-hover " />
+                  +57 316 868 9229
+                </a>
               </div>
               <div className="c-info-item">
-                <EmailIcon className="c-icon color-hover" />
-                <a href="mailto:wmurciarey9@gmail.com">wmurciarey9@gmail.com</a>
+                <a href="mailto:wmurciarey9@gmail.com">
+                  <EmailIcon className="c-icon color-hover" />
+                  wmurciarey9@gmail.com
+                </a>
               </div>
             </div>
           </div>
