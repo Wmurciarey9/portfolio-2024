@@ -34,10 +34,39 @@
 }
 
 .iconItem .icon {
-  font-size: 30px;
+  font-size: 60px;
   padding: 10px;
   gap: 20px;
+  color: white;
   &:hover {
     color: #0b60b0;
   }
+}
+
+/*! ----- Responsiveness Code ----- */
+
+/** Mobile */
+
+@media screen and (max-width: 576px) {
+  .wm-footer {
+    height: 350px;
+  }
+
+  .wm-footer-icons .iconItem .icon {
+    color: white;
+  }
+}
+
+/** Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/** Laptop */
+
+@media screen and (min-width: 992px) {
+}
+
+/** Dektop */
+
+@media screen and (min-width: 1200px) {
 }

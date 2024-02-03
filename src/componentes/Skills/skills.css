@@ -36,3 +36,30 @@
   transition: ease-in-out 0.3s;
   cursor: pointer;
 }
+
+/*! ----- Responsiveness Code ----- */
+
+/** Mobile */
+
+@media screen and (max-width: 576px) {
+  .skill-item {
+    .icon {
+      font-size: 2.3rem !important;
+      padding: 10px;
+    }
+  }
+}
+
+/** Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/** Laptop */
+
+@media screen and (min-width: 992px) {
+}
+
+/** Dektop */
+
+@media screen and (min-width: 1200px) {
+}

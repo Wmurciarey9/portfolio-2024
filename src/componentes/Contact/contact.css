@@ -100,3 +100,54 @@
     }
   }
 }
+
+/*! ----- Responsiveness Code ----- */
+
+/** Mobile */
+
+@media screen and (max-width: 576px) {
+  .c {
+    height: auto;
+    flex-direction: column;
+
+    .c-wrapper {
+      flex-direction: column;
+      padding: 0;
+      .c-left {
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        .contact-gif {
+          width: 300px;
+        }
+        .c-title {
+          font-size: 40px;
+        }
+      }
+
+      .c-right {
+        margin: 20px;
+
+        input {
+          margin: 10px;
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/** Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/** Laptop */
+
+@media screen and (min-width: 992px) {
+}
+
+/** Dektop */
+
+@media screen and (min-width: 1200px) {
+}

@@ -18,9 +18,39 @@
   justify-content: space-between;
   margin: 0 80px;
   margin-top: 80px;
-  padding-bottom: 140px;
 
   .iconSmall {
     font-size: 30px;
   }
+}
+
+/*! ----- Responsiveness Code ----- */
+
+/** Mobile */
+
+@media screen and (max-width: 576px) {
+  .wm-main-projects {
+    margin-bottom: 10px;
+    span {
+      margin: 0px 20px;
+    }
+  }
+  .projects {
+    flex-direction: column;
+    margin: 30px;
+  }
+}
+
+/** Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/** Laptop */
+
+@media screen and (min-width: 992px) {
+}
+
+/** Dektop */
+
+@media screen and (min-width: 1200px) {
 }

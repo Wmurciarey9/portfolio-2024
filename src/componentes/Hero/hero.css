@@ -57,3 +57,51 @@
     border-radius: 50%;
   }
 }
+
+/*! ----- Responsiveness Code ----- */
+
+/** Mobile */
+
+@media screen and (max-width: 576px) {
+  .wm-hero {
+    /* height: auto; */
+    flex-direction: column;
+    margin: 100px 20px 50px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .wm-hero-left {
+    width: 100%;
+    z-index: 99;
+
+    p {
+      font-size: 30px;
+    }
+    h1 {
+      font-size: 60px;
+    }
+  }
+  .wm-hero-right {
+    width: 100%;
+    margin: 0px 20px;
+    display: none;
+    img {
+      width: 100px;
+    }
+  }
+}
+
+/** Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/** Laptop */
+
+@media screen and (min-width: 992px) {
+}
+
+/** Dektop */
+
+@media screen and (min-width: 1200px) {
+}
