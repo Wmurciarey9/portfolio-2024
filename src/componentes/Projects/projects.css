@@ -23,23 +23,4 @@
   .iconSmall {
     font-size: 30px;
   }
-
-  @include mobile {
-    margin: 0 7%;
-    margin-top: 140px;
-    margin-bottom: 140px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  @include tablet {
-    margin: 0 7%;
-    margin-top: 140px;
-    margin-bottom: 140px;
-  }
-  @include laptop {
-    margin: 0 7%;
-    margin-top: 140px;
-    margin-bottom: 140px;
-  }
 }

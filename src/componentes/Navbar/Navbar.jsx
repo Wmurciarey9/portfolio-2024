@@ -16,20 +16,19 @@ export const Navbar = () => {
   };
 
   return (
-    <div className={isScrolled ? "wm-navbar-main scrolled" : "wm-navbar-main"}>
-      <div className="wm-navbar-left">
+    // Attempt new navbar
+    <nav
+      className={
+        isScrolled
+          ? "wm-navbar-main navbar navbar-expand-lg scrolled"
+          : "wm-navbar-main navbar navbar-expand-lg"
+      }
+    >
+      <div className="container-fluid">
         <Link to={`/`}>
-          <img className="wm-navbar-logo" src={Logo} alt="logo" />
+          <img className="wm-navbar-logo navbar-brand" src={Logo} alt="logo" />
         </Link>
-      </div>
-      <div className="wm-navbar-right">
-        <div className="wm-navbar-right-menu">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
+        {/* Icons Placement */}
         <div className="wm-navbar-right-icons">
           <div className="iconItem">
             <a href="https://github.com/Wmurciarey9">
@@ -42,13 +41,47 @@ export const Navbar = () => {
             </a>
           </div>
           <div className="iconItem">
-            <a href=""></a>
             <a href={WilsonCV} download="Wilson-CV.pdf">
               <InsertDriveFileIcon className="icon" />
             </a>
           </div>
         </div>
+        {/* Hamburgues Menu + Regular Menu*/}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a href="#hero">Home</a>
+            </li>
+            <li className="nav-item">
+              <a href="#about">About</a>
+            </li>
+            <li className="nav-item">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };

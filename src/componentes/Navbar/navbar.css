@@ -2,18 +2,21 @@
   color: #222;
   display: flex;
   flex-direction: row;
-  height: 100px;
   justify-content: space-around;
   position: fixed;
   top: 0;
   z-index: 999;
   width: 100%;
+  padding: 0 80px;
 
   &.scrolled {
     background-color: #222;
     transition: 0.8s;
-    a {
+    a,
+    .nav-item,
+    .iconItem .icon {
       color: white;
+
       &:hover {
         color: #40a2d8;
       }
@@ -25,57 +28,101 @@
   }
 }
 
-.wm-navbar-left {
-  width: 20%;
-  margin-left: 80px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .wm-navbar-logo {
   width: 100%;
   height: 70px;
 }
 
-.wm-navbar-right {
-  display: flex;
-  width: 80%;
-  margin-right: 80px;
-  /* justify-content: space-around; */
-}
-
-.wm-navbar-right-menu {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
   gap: 20px;
 }
 
-.wm-navbar-right a {
+.navbar-nav a {
   color: #222;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
   font-family: "Clash Display", sans-serif;
+
   &:hover {
     color: #0b60b0;
   }
 }
 .wm-navbar-right-icons {
-  width: 30%;
+  width: 35%;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   gap: 20px;
 }
 .iconItem .icon {
-  font-size: 30px;
+  font-size: 45px;
   padding: 10px;
+  color: #222;
   &:hover {
     color: #0b60b0;
   }
+}
+
+/*! ----- Responsiveness Code ----- */
+
+/** Mobile */
+@media screen and (max-width: 576px) {
+  .wm-navbar-main {
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+
+    &.scrolled {
+      .wm-navbar-logo {
+        content: url("../../assets/images/logo-short-white.png");
+      }
+      .navbar-toggler {
+        background-color: white;
+      }
+
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+        background-color: #222;
+      }
+    }
+  }
+  ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    gap: 10px;
+    background-color: white;
+  }
+
+  .wm-navbar-logo {
+    content: url("../../assets/images/Logo-Short.png");
+  }
+
+  .wm-navbar-right-menu {
+    display: none;
+    a {
+      font-size: 16px;
+    }
+  }
+  .wm-navbar-right-icons {
+    width: auto;
+    gap: 5px;
+  }
+
+  .iconItem .icon {
+    padding: 10px;
+    font-size: 50px;
+    color: #222;
+  }
+}
+
+/** Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/** Laptop */
+
+@media screen and (min-width: 992px) {
+}
+
+/** Dektop */
+
+@media screen and (min-width: 1200px) {
 }
