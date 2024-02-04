@@ -1,4 +1,4 @@
-import React from "react";
+import "./home.css";
 import { Hero } from "../../componentes/Hero/Hero.jsx";
 import { AboutMe } from "../../componentes/About/AboutMe.jsx";
 import { Skills } from "../../componentes/Skills/Skills.jsx";
@@ -9,8 +9,7 @@ import { Navbar } from "../../componentes/Navbar/Navbar.jsx";
 
 export const Home = () => {
   return (
-    <div>
-      {" "}
+    <div className="home">
       <Navbar />
       <Hero />
       <AboutMe />

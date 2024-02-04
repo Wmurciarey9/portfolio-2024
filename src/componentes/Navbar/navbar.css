@@ -6,12 +6,13 @@ html {
   color: #222;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 99;
   width: 100%;
   padding: 0 80px;
+  max-width: 1280px;
 
   &.scrolled {
     background-color: #222;
@@ -128,5 +129,8 @@ nav .iconItem .icon {
 
 /** Dektop */
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
+  .wm-navbar-main {
+    padding: 0px;
+  }
 }
